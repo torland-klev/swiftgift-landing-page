@@ -76,7 +76,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                to: 'mailto:klevhenrik@gmail.com',
+                href: 'mailto:klevhenrik@gmail.com',
               },
             ],
           },
