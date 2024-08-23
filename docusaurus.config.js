@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SwiftGift',
-  tagline: 'Giving has never easier',
+  tagline: 'Giving has never been easier',
   url: 'https://swiftest.no',
   baseUrl: '/',
   onBrokenLinks: 'throw',
