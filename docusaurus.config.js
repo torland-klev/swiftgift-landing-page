@@ -1,27 +1,22 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'SwiftGift',
+  tagline: 'Giving has never been so easy',
+  url: 'https://swiftest.no',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'torland-klev',
+  projectName: 'swiftgift-landing-page',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -34,17 +29,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/torland-klev/swiftgift-landing-page/tree/main',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/torland-klev/swiftgift-landing-page/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,11 +48,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'SwiftGift',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+          alt: 'SwiftGift Logo',
+          src: 'img/swift-gift-logo-small.png',
+        } /*
         items: [
           {
             type: 'doc',
@@ -71,62 +62,62 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://api.swiftgift.no/swagger',
+            label: 'OpenAPI',
             position: 'right',
           },
-        ],
+        ],*/,
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Contact',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Email',
+                to: 'mailto:klevhenrik@gmail.com',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Components',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'REST-API',
+                href: 'https://api.swiftgift.no/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Swagger',
+                href: 'https://api.swiftgift.no/swagger',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Code',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'API',
+                href: 'https://github.com/torland-klev/swiftgift-api',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Flutter App',
+                href: 'https://github.com/torland-klev/swiftgift-app',
+              },
+              {
+                label: 'Landing Page',
+                href: 'https://github.com/torland-klev/swiftgift-landing-page',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Klev`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
-};
+}
 
-module.exports = config;
+module.exports = config

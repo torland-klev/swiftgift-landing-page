@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "format": "prettier --write .",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
@@ -21,7 +22,8 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.1"
+    "@docusaurus/module-type-aliases": "2.0.1",
+    "prettier": "3.3.3"
   },
   "browserslist": {
     "production": [
